@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class TrapezoidalRule {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập giới hạn dưới a: ");
+        System.out.print("Enter a: ");
         double a = scanner.nextDouble();
-        System.out.print("Nhập giới hạn trên b: ");
+        System.out.print("Enter b: ");
         double b = scanner.nextDouble();
-        System.out.print("Nhập số phần tử n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
-        System.out.println("Giá trị gần đúng của ln(x) = " + trapezoidalRule(a, b, n));
+        System.out.println("ln(x) = " + trapezoidalRule(a, b, n));
     }
 
     public static double trapezoidalRule(double a, double b, int n) {
