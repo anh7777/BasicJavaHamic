@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class SumOfFirstNNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
-        System.out.println("Tổng " + n + " số đầu tiên là: " + sumOfFirstNNumbers(n));
+        System.out.println("Sum of " + n + " number first is: " + sumOfFirstNNumbers(n));
     }
 
     public static int sumOfFirstNNumbers(int n) {
