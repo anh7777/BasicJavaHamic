@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class ReverseNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
-        System.out.println("Số đảo ngược của " + n + " là: " + reverseNumber(n));
+        System.out.println("The reverse number " + n + " is: " + reverseNumber(n));
     }
 
     public static int reverseNumber(int n) {
