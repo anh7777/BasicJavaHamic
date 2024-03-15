@@ -3,9 +3,8 @@ import java.util.Scanner;
 public class BinaryStrings {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập độ dài của xâu nhị phân: ");
+        System.out.print("Enter the length: ");
         int n = scanner.nextInt();
-        System.out.println("Các xâu nhị phân có độ dài " + n + " là:");
         generateBinaryStrings(n, "");
     }
 
