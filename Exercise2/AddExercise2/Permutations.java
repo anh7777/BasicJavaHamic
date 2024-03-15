@@ -3,13 +3,12 @@ import java.util.Scanner;
 public class Permutations {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = i + 1;
         }
-        System.out.println("Các hoán vị của " + n + " số đầu tiên là:");
         generatePermutations(arr, 0);
     }
 
