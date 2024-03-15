@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class LargestDecreasingNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số n: ");
+        System.out.print("Enter n: ");
         String input = scanner.next();
         char[] digits = input.toCharArray();
         Arrays.sort(digits);
-        System.out.println("Số lớn nhất tạo nên từ các chữ số của " + input + " là: " + largestDecreasingNumber(digits));
+        System.out.println(largestDecreasingNumber(digits));
     }
 
     public static String largestDecreasingNumber(char[] digits) {
