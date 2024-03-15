@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class CountDigits {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
-        System.out.println("Số chữ số của " + n + " là: " + countDigits(n));
+        System.out.println("The num of " + n + " is: " + countDigits(n));
     }
 
     public static int countDigits(int n) {
