@@ -5,41 +5,41 @@ public class Exercise32 {
         Scanner scanner = new Scanner(System.in);
 
         // a) In số đảo ngược của số nguyên n
-        System.out.println("Nhập số nguyên n:");
+        System.out.println("Enter n: ");
         int n = scanner.nextInt();
-        System.out.println("Số đảo ngược của " + n + " là " + reverseNumber(n));
+        System.out.println("The reverse number of " + n + " is " + reverseNumber(n));
 
         // b) Đếm số lượng số nguyên tố trong đoạn [l, r]
-        System.out.println("Nhập hai số nguyên dương l và r (l < r):");
+        System.out.println("Enter l and r (l < r):");
         int l = scanner.nextInt();
         int r = scanner.nextInt();
-        System.out.println("Số lượng số nguyên tố trong đoạn [" + l + ", " + r + "] là: " + countPrimesInRange(l, r));
+        System.out.println("The number between [" + l + "and " + r + "] is: " + countPrimesInRange(l, r));
 
         // c) Nhập số nguyên n từ 0 đến 100
         int input;
         do {
-            System.out.println("Nhập số nguyên n từ 0 đến 100:");
+            System.out.println("Enter n from 0 to 100: ");
             input = scanner.nextInt();
         } while (input < 0 || input > 100);
-        System.out.println("Bạn đã nhập số " + input);
+        System.out.println("You entered " + input);
 
         // d) Kiểm tra số đẹp
-        System.out.println("Nhập số nguyên n:");
+        System.out.println("Enter n:");
         int number = scanner.nextInt();
-        System.out.println("Số " + number + " có phải là số đẹp không? " + isBeautifulNumber(number));
+        System.out.println("Is " + number + " is a nice number ? " + isBeautifulNumber(number));
 
         // e) In số lượng các số đẹp từ 1 đến n
-        System.out.println("Nhập số nguyên n:");
+        System.out.println("Enter n:");
         int limit = scanner.nextInt();
-        System.out.println("Số lượng các số đẹp từ 1 đến " + limit + " là: " + countBeautifulNumbers(limit));
+        System.out.println("the number of nice num from 1 to " + limit + " is: " + countBeautifulNumbers(limit));
 
         // f) In n số siêu lẻ đầu tiên
-        System.out.println("Nhập số nguyên n:");
+        System.out.println("Enter n:");
         int count = scanner.nextInt();
         printFirstNSuperOddNumbers(count);
 
         // g) Tính ln(1 + x) bằng khai triển Maclaurin
-        System.out.println("Nhập số thực x:");
+        System.out.println("Enter double x:");
         double x = scanner.nextDouble();
         System.out.println("ln(1 + " + x + ") = " + calculateNaturalLogarithm(x));
 
