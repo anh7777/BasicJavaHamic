@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class PalindromeNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
         if (isPalindrome(n)) {
-            System.out.println(n + " là số đối xứng.");
+            System.out.println(n + " is palindrome.");
         } else {
-            System.out.println(n + " không phải là số đối xứng.");
+            System.out.println(n + " is not palindrome.");
         }
     }
 
