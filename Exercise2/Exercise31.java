@@ -3,42 +3,41 @@ import java.util.Scanner;
 public class Exercise31 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Nhập số nguyên n:");
+        System.out.println("Enter the number:");
         int n = scanner.nextInt();
         
-        System.out.println("a) Kiểm tra xem số n có phải là số nguyên tố không?");
+        //a) Kiểm tra xem số n có phải là số nguyên tố không?"
         System.out.println(isPrime(n));
         
-        System.out.println("b) Kiểm tra xem số n có phải là số hoàn hảo không?");
+        //b) Kiểm tra xem số n có phải là số hoàn hảo không?"
         System.out.println(isPerfectNumber(n));
         
-        System.out.println("c) In ra màn hình n số nguyên tố đầu tiên:");
+        //c) In ra màn hình n số nguyên tố đầu tiên:"
         printFirstNPrimes(n);
         
-        System.out.println("d) In ra màn hình số Fibonacci thứ n:");
+        //d) In ra màn hình số Fibonacci thứ n:"
         System.out.println(getFibonacci(n));
         
-        System.out.println("f) Nhập số thực x, tính sin(x) theo công thức Taylor đến o(x^(2n+1)):");
-        System.out.println("Nhập giá trị x:");
-        double x = scanner.nextDouble();
-        System.out.println("Nhập số nguyên n:");
+        //f) Nhập số thực x, tính sin(x) theo công thức Taylor đến o(x^(2n+1)):
+        System.out.println("Enter x:");
+        double doubleX = scanner.nextDouble();
+        System.out.println("Enter n:");
         int taylorDegree = scanner.nextInt();
-        System.out.println("sin(" + x + ") = " + calculateSin(x, taylorDegree));
+        System.out.println("sin(" + doubleX + ") = " + calculateSin(doubleX, taylorDegree));
         
-        System.out.println("g) Nhập số thực x, tính e^x theo công thức Taylor đến o(x^n):");
-        System.out.println("Nhập giá trị x:");
-        x = scanner.nextDouble();
-        System.out.println("Nhập số nguyên n:");
+        //g) Nhập số thực x, tính e^x theo công thức Taylor đến o(x^n):"
+        System.out.println("Enter x:");
+        double xDouble = scanner.nextDouble();
+        System.out.println("Enter n:");
         taylorDegree = scanner.nextInt();
-        System.out.println("e^(" + x + ") = " + calculateExponential(x, taylorDegree));
+        System.out.println("e^(" + xDouble + ") = " + calculateExponential(xDouble, taylorDegree));
         
-        System.out.println("h) Nhập số thực x, tính cos(x) theo công thức Taylor đến o(x^(2n)):");
-        System.out.println("Nhập giá trị x:");
-        x = scanner.nextDouble();
-        System.out.println("Nhập số nguyên n:");
+        //h) Nhập số thực x, tính cos(x) theo công thức Taylor đến o(x^(2n))
+        System.out.println("Enter x:");
+        xDouble = scanner.nextDouble();
+        System.out.println("Enter n:");
         taylorDegree = scanner.nextInt();
-        System.out.println("cos(" + x + ") = " + calculateCos(x, taylorDegree));
+        System.out.println("cos(" + xDouble + ") = " + calculateCos(xDouble, taylorDegree));
         
         scanner.close();
     }
