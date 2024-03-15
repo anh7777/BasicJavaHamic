@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Factorial {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập n: ");
+        System.out.print("Enter n: ");
         int n = scanner.nextInt();
         System.out.println("P(" + n + ") = " + factorial(n));
     }
