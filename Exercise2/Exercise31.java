@@ -19,23 +19,23 @@ public class Exercise31 {
         System.out.println(getFibonacci(n));
         
         //f) Nhập số thực x, tính sin(x) theo công thức Taylor đến o(x^(2n+1)):
-        System.out.println("Enter x:");
+        System.out.println("Enter x: ");
         double doubleX = scanner.nextDouble();
-        System.out.println("Enter n:");
+        System.out.println("Enter n: ");
         int taylorDegree = scanner.nextInt();
         System.out.println("sin(" + doubleX + ") = " + calculateSin(doubleX, taylorDegree));
         
         //g) Nhập số thực x, tính e^x theo công thức Taylor đến o(x^n):"
-        System.out.println("Enter x:");
+        System.out.println("Enter x: ");
         double xDouble = scanner.nextDouble();
-        System.out.println("Enter n:");
+        System.out.println("Enter n: ");
         taylorDegree = scanner.nextInt();
         System.out.println("e^(" + xDouble + ") = " + calculateExponential(xDouble, taylorDegree));
         
         //h) Nhập số thực x, tính cos(x) theo công thức Taylor đến o(x^(2n))
-        System.out.println("Enter x:");
+        System.out.println("Enter x: ");
         xDouble = scanner.nextDouble();
-        System.out.println("Enter n:");
+        System.out.println("Enter n: ");
         taylorDegree = scanner.nextInt();
         System.out.println("cos(" + xDouble + ") = " + calculateCos(xDouble, taylorDegree));
         
