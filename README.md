@@ -1,1 +1,1 @@
-# BasicJavaHamicExercise1
+# BasicJavaHamic
