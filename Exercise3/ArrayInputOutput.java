@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class ArrayInputOutput {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số lượng phần tử của mảng: ");
+        System.out.print("Enter the length of array: ");
         int n = scanner.nextInt();
         int[] arr = new int[n];
-        System.out.println("Nhập các phần tử của mảng:");
+        System.out.println("Enter the elements of array:");
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
-        System.out.println("Mảng các số nguyên:");
+        System.out.println("Array is:");
         printArray(arr);
     }
 
